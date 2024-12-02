@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f7e9d5;
+}
+.homepagepic img{
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background: linear-gradient(135deg, gray, #93c995);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+/* Nav bar */
+nav {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #405d27;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 1s ease;
+    box-shadow: 0 5px 10px rgb(0, 0, 0,0.2);
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    color: #f0f8ff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: default;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #f4eae6;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    position: relative;
+    margin: 0 20px;
+    padding: 0 2px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #f4eae6;
+    padding: 0;
+}
+
+nav ul li a:hover{
+    color: #c1946a;/* รอเปลี่ยนสี */
+    transition: all 0.5s ease-in-out;
+}
+
+.students-info {
+    padding: 40px 20px;
+    background-color: #fff2df;
+    text-align: center;
+    
+}
+
+.students-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #3e4444;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+.students-info h4 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.students-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.student-card img {
+    width: 150px;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin: 20px auto; 
+    display: block;
+
+}
+
+
+
+.student-card {
+    background-color: #b79c65;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    text-align: center; 
+}
+.student-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.student-card h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #f5f9ec;
+    margin: 15px 0;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+
+.student-card p {
+    padding: 0 20px 20px;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    position: relative;
+}
+.guest-book {
+    background-color: #fff2df;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+
+.guest-book h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+
+.guest-book-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.guest-form,
+.guest-entries {
+    flex: 1;
+    background-color: #dac292;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guest-form h3,
+.guest-entries h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #405d27;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45A049;
+}
+
+
+#entriesList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#entriesList li {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+    /* Nav */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #6b9a42;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        padding: 1rem 0;
+        z-index: 101;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+        opacity: 0.9;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+    /* Nav */
+    .students-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .guest-book-container {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    header {
+        padding: 30px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .students-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .guest-book-container {
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    header {
+        padding: 40px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .students-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .guest-book-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+.scroll {
+    overflow: hidden;
+}
+.loop {
+    display: flex;
+    border: 0.25px solid #2f5061;
+    margin-inline: auto;
+    position: relative;
+    white-space: nowrap;
+}
+@keyframes scroll-text {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+.text {
+    display: inline-block;
+    animation: scroll-text 30s linear infinite;
+    margin: 0;
+    font-size: larger;
+    color: #c1946a;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0.5rem;
+}
+
